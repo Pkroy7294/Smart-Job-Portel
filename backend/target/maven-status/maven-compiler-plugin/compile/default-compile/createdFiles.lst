@@ -1,0 +1,7 @@
+com\smartjobportal\controller\ApplicationController.class
+com\smartjobportal\dto\application\ApplicationResponse.class
+com\smartjobportal\service\SkillExtractionService.class
+com\smartjobportal\service\ApplicationService.class
+com\smartjobportal\dto\application\ApplicationRequest.class
+com\smartjobportal\config\ResumeProperties.class
+com\smartjobportal\service\JobMatchingService.class

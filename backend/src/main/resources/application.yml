@@ -1,0 +1,71 @@
+spring:
+  application:
+    name: smart-job-portal
+  datasource:
+    url: jdbc:mysql://localhost:3306/smart_job_portal?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+app:
+  jwt:
+    secret: smart-job-portal-secret-key-2026-smart-job-portal-secret-key
+    expiration-ms: 86400000
+  resume:
+    allowed-extensions:
+      - pdf
+      - doc
+      - docx
+    skill-keywords:
+      - java
+      - spring boot
+      - spring security
+      - microservices
+      - mysql
+      - postgresql
+      - hibernate
+      - jpa
+      - rest api
+      - docker
+      - kubernetes
+      - aws
+      - react
+      - angular
+      - javascript
+      - typescript
+      - html
+      - css
+      - git
+      - maven
+      - junit
+      - kafka
+      - redis
+      - mongodb
+      - python
+      - data structures
+      - algorithms
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    root: INFO
+    com.smartjobportal: DEBUG
